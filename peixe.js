@@ -18,12 +18,14 @@ function preload() {
     this.load.image('mar', 'assests/bg_azul-claro.png');
     this.load.image('logo', 'assests/logo-inteli_azul.png');
     this.load.image('peixe', 'assests/peixes/baiacu.png');
+    this.load.image('tubarao','assests/peixes/tubarao.png');
 }
     
 function create() {
     this.add.image(400, 300, 'mar');
     this.add.image(400, 525, 'logo').setScale(0.5);
-    peixe = this.add.image(400, 300, 'peixe')
+    this.add.image(600, 300, 'tubarao').setScale(1);
+    peixe = this.add.image(400, 300, 'peixe');
     peixe.setFlip(true, false);
 }
 
